@@ -19,6 +19,16 @@ namespace SalesWebMvc.Models
 
         }
 
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department)
+        {
+            Id = id;
+            Name = name;
+            Email = email;
+            BirthDate = birthDate;
+            BaseSalary = baseSalary;
+            Department = department;
+        }
+
         public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department, ICollection<SalesRecord> sales)
         {
             Id = id;

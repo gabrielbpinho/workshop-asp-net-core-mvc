@@ -15,6 +15,12 @@ namespace SalesWebMvc.Models
 
         }
 
+        public Department(int id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
         public Department(int id, string name, ICollection<Seller> sellers)
         {
             Id = id;
